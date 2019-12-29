@@ -1,0 +1,2718 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>MBM STOCK</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">MBM STOCK</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                        <span class="idName">加權指數:</span>
+                        <span class="idDeal up">
+                            11927.73
+                            <span class="idIncrease">▲ 91.31 (0.77%)</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                        <span class="idName">摩台指:</span>
+                        <span class="idDeal dn">
+                            459.3
+                            <span class="idIncrease">▼ -2.30 (-0.50%)</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                        <span class="idName">台指期:</span>
+                        <span class="idDeal up">
+                            11965
+                            <span class="idIncrease">▲ 114.00 (0.96%)</span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="ALL">
+            <!-- {{-- 市場和新聞(左) --}} -->
+            <div class="marketNews">
+                <!-- {{-- 左上 --}} -->
+                <div class="market">
+                    <!-- {{-- 市場菜單 --}} -->
+                    <div class="marketBar">
+                        <div class="marketBarC">
+                            <div class="marketFavorite">最愛</div>
+                            <div class="marketTaiwan">TWD</div>
+                        </div>
+                    </div>
+
+                    <!-- {{-- 市場指數 --}} -->
+                    <div class="marketValue">
+                        <!-- {{-- 市場nav --}} -->
+                        <div class="valueNav">
+                            <div class="commodity btw_30">商品</div>
+                            <div class="deal btw_30">成交</div>
+                            <div class="increase btw_30">漲幅</div>
+                        </div>
+
+                        <!-- {{-- 個股 --}} -->
+                        <div class="stockDetail">
+                            <table class="table table-striped table-dark">
+                                <tbody>
+                                    <tr class="idx_stock">
+                                        <td class="commodityValue">台積電</td>
+                                        <td class="dealValue up">329.00</td>
+                                        <td class="increaseValue up">+ 100.00</td>
+                                    </tr>
+                                    <tr class="idx_stock">
+                                        <td class="commodityValue">台積電</td>
+                                        <td class="dealValue up">329.00</td>
+                                        <td class="increaseValue up">+ 4.00</td>
+                                    </tr>
+                                    <tr class="idx_stock">
+                                        <td class="commodityValue">台積電</td>
+                                        <td class="dealValue dn">329.00</td>
+                                        <td class="increaseValue dn">- 4.00</td>
+                                    </tr>
+                                    <tr class="idx_stock">
+                                        <td class="commodityValue">台積電</td>
+                                        <td class="dealValue dn">329.00</td>
+                                        <td class="increaseValue dn">- 100.00</td>
+                                    </tr>
+                                    <tr class="idx_stock">
+                                        <td class="commodityValue">台積電</td>
+                                        <td class="dealValue">329.00</td>
+                                        <td class="increaseValue">+ 4.00</td>
+                                    </tr>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- {{-- 新聞(左下) --}} -->
+                <div class="news">
+                    <table class="table table-borderless table-dark">
+                        <tbody>
+                            <tr class="tabNWS">
+                                <!-- {{-- 新聞時間 --}} -->
+                                <td class="newsTime">12:57</td>
+                                <!-- {{-- 新聞股票 --}} -->
+                                <td class="newsStock">台南-KY營運現轉機 登16個月新高</td>
+                                <!-- {{-- 新聞標題 --}} -->
+                                {{-- <td class="newsContent">較去年微減</td> --}}
+                            </tr>
+                            <tr class="tabNWS">
+                                <!-- {{-- 新聞時間 --}} -->
+                                <td class="newsTime">16:47</td>
+                                <!-- {{-- 新聞股票 --}} -->
+                                <td class="newsStock">鎧勝-KY較去年微減</td>
+                            </tr>
+                            <tr class="tabNWS">
+                                <!-- {{-- 新聞時間 --}} -->
+                                <td class="newsTime">16:47</td>
+                                <!-- {{-- 新聞股票 --}} -->
+                                <td class="newsStock">鎧勝-KY較去年微減</td>
+                            </tr>
+                            <tr class="tabNWS">
+                                    <!-- {{-- 新聞時間 --}} -->
+                                    <td class="newsTime">16:47</td>
+                                    <!-- {{-- 新聞股票 --}} -->
+                                    <td class="newsStock">鎧勝-KY較去年微減</td>
+                                </tr>
+                            <tr class="tabNWS">
+                                    <!-- {{-- 新聞時間 --}} -->
+                                    <td class="newsTime">16:47</td>
+                                    <!-- {{-- 新聞股票 --}} -->
+                                    <td class="newsStock">鎧勝-KY較去年微減</td>
+                            </tr>
+                            <tr class="tabNWS">
+                                    <!-- {{-- 新聞時間 --}} -->
+                                    <td class="newsTime">16:47</td>
+                                    <!-- {{-- 新聞股票 --}} -->
+                                    <td class="newsStock">鎧勝-KY較去年微減</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- {{-- 主介面(右) --}} -->
+            <div class="mTechChart">
+                <!-- {{-- 股票蠟燭圖(上) --}} -->
+                <div class="stockCharts">
+                    <!-- {{-- 股票Nav --}} -->
+                    <div class="stockchartsNav">
+                        <span class="cTipTop">
+                            <b id="stkIdx">2330</b>
+                        </span>
+                        <span class="cTipTop">
+                            <b id="V_Date" name="Tvalue">2019/07/30</b>
+                        </span>
+                        <span class="cTipTop">
+                            開
+                            <b id="V_Open" name="Tvalue" class="up">340.00</b>
+                        </span>
+                        <span class="cTipTop">
+                            高
+                            <b id="V_Open" name="Tvalue" class="up">343.00</b>
+                        </span>
+                        <span class="cTipTop">
+                            低
+                            <b id="V_Open" name="Tvalue" class="up">338.00</b>
+                        </span>
+                        <span class="cTipTop">
+                            收
+                            <b id="V_Open" name="Tvalue" class="up">339.00</b>
+                        </span>
+                        <span class="cTipTop">
+                            量
+                            <b id="V_Open" name="Tvalue" class="up">58,075↑</b>
+                        </span>
+                    </div>
+
+                    <!-- {{-- 股票時間線-日/周/月 --}} -->
+                    <div class="timeNav">
+                        <div class="T_Day"></div>
+                        <div class="T_Week"></div>
+                        <div class="T_Month"></div>
+                    </div>
+
+                    <!-- {{-- 蠟燭圖 --}} -->
+                    <div class="stockLines">
+                        <div id="chartdiv"></div>
+                    </div>
+                </div>
+
+                <!-- {{-- 技術分析(下) --}} -->
+                <div class="Technical">
+                    <!-- {{-- 三大法人 --}} -->
+                    <div class="legal"></div>
+
+                    <div id="test"></div>
+                    <!-- {{-- KD --}} -->
+                    <div class="kd"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+
+    {{-- test --}}
+    <!-- Resources -->
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/dark.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+
+    <!-- Chart code -->
+    <script>
+        am4core.ready(function() {
+
+// Themes begin
+am4core.useTheme(am4themes_dark);
+am4core.useTheme(am4themes_animated);
+// Themes end
+
+var chart = am4core.create("chartdiv", am4charts.XYChart);
+chart.paddingRight = 20;
+
+
+chart.dateFormatter.inputDateFormat = "yyyy-MM-dd";
+
+var dateAxis = chart.xAxes.push(new am4charts.DateAxis());
+dateAxis.renderer.grid.template.location = 0;
+
+var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+valueAxis.tooltip.disabled = true;
+
+var series = chart.series.push(new am4charts.CandlestickSeries());
+series.dataFields.dateX = "date";
+series.dataFields.valueY = "close";
+series.dataFields.openValueY = "open";
+series.dataFields.lowValueY = "low";
+series.dataFields.highValueY = "high";
+series.simplifiedProcessing = true;
+series.tooltipText = "Open:${openValueY.value}\nLow:${lowValueY.value}\nHigh:${highValueY.value}\nClose:${valueY.value}";
+
+chart.cursor = new am4charts.XYCursor();
+
+// a separate series for scrollbar
+var lineSeries = chart.series.push(new am4charts.LineSeries());
+lineSeries.dataFields.dateX = "date";
+lineSeries.dataFields.valueY = "close";
+// need to set on default state, as initially series is "show"
+lineSeries.defaultState.properties.visible = false;
+
+// hide from legend too (in case there is one)
+lineSeries.hiddenInLegend = true;
+lineSeries.fillOpacity = 0.5;
+lineSeries.strokeOpacity = 0.5;
+
+var scrollbarX = new am4charts.XYChartScrollbar();
+scrollbarX.series.push(lineSeries);
+chart.scrollbarX = scrollbarX;
+
+chart.data = [
+  {
+    "date": "2019/1/30",
+    "open": 220.5,
+    "high": 221.5,
+    "low": 220,
+    "close": 221
+  },
+  {
+    "date": "2019/2/11",
+    "open": 228,
+    "high": 229,
+    "low": 226.5,
+    "close": 228
+  },
+  {
+    "date": "2019/2/12",
+    "open": 230,
+    "high": 230,
+    "low": 229,
+    "close": 230
+  },
+  {
+    "date": "2019/2/13",
+    "open": 232,
+    "high": 232,
+    "low": 228.5,
+    "close": 229
+  },
+  {
+    "date": "2019/2/14",
+    "open": 229.5,
+    "high": 230,
+    "low": 226,
+    "close": 227
+  },
+  {
+    "date": "2019/2/15",
+    "open": 229,
+    "high": 229,
+    "low": 226.5,
+    "close": 227
+  },
+  {
+    "date": "2019/2/18",
+    "open": 229,
+    "high": 230.5,
+    "low": 228.5,
+    "close": 230
+  },
+  {
+    "date": "2019/2/19",
+    "open": 230,
+    "high": 230.5,
+    "low": 229,
+    "close": 229
+  },
+  {
+    "date": "2019/2/20",
+    "open": 231.5,
+    "high": 234.5,
+    "low": 231,
+    "close": 234.5
+  },
+  {
+    "date": "2019/2/21",
+    "open": 235.5,
+    "high": 236.5,
+    "low": 234.5,
+    "close": 236.5
+  },
+  {
+    "date": "2019/2/22",
+    "open": 235.5,
+    "high": 236.5,
+    "low": 234,
+    "close": 236.5
+  },
+  {
+    "date": "2019/2/25",
+    "open": 237.5,
+    "high": 239,
+    "low": 236,
+    "close": 238
+  },
+  {
+    "date": "2019/2/26",
+    "open": 239,
+    "high": 240,
+    "low": 236.5,
+    "close": 239.5
+  },
+  {
+    "date": "2019/2/27",
+    "open": 238.5,
+    "high": 239.5,
+    "low": 237,
+    "close": 239
+  },
+  {
+    "date": "2019/3/4",
+    "open": 239.5,
+    "high": 239.5,
+    "low": 234.5,
+    "close": 235.5
+  },
+  {
+    "date": "2019/3/5",
+    "open": 234,
+    "high": 234.5,
+    "low": 232.5,
+    "close": 233
+  },
+  {
+    "date": "2019/3/6",
+    "open": 235,
+    "high": 235.5,
+    "low": 233.5,
+    "close": 234
+  },
+  {
+    "date": "2019/3/7",
+    "open": 235,
+    "high": 235,
+    "low": 233,
+    "close": 234
+  },
+  {
+    "date": "2019/3/8",
+    "open": 231,
+    "high": 231.5,
+    "low": 229,
+    "close": 230
+  },
+  {
+    "date": "2019/3/11",
+    "open": 228,
+    "high": 230.5,
+    "low": 227.5,
+    "close": 230.5
+  },
+  {
+    "date": "2019/3/12",
+    "open": 233,
+    "high": 237,
+    "low": 232.5,
+    "close": 235.5
+  },
+  {
+    "date": "2019/3/13",
+    "open": 234,
+    "high": 237,
+    "low": 234,
+    "close": 237
+  },
+  {
+    "date": "2019/3/14",
+    "open": 239,
+    "high": 239,
+    "low": 234,
+    "close": 234.5
+  },
+  {
+    "date": "2019/3/15",
+    "open": 237,
+    "high": 239.5,
+    "low": 235.5,
+    "close": 239
+  },
+  {
+    "date": "2019/3/18",
+    "open": 239.5,
+    "high": 241,
+    "low": 239,
+    "close": 241
+  },
+  {
+    "date": "2019/3/19",
+    "open": 239,
+    "high": 240.5,
+    "low": 238,
+    "close": 240.5
+  },
+  {
+    "date": "2019/3/20",
+    "open": 242,
+    "high": 242,
+    "low": 239.5,
+    "close": 242
+  },
+  {
+    "date": "2019/3/21",
+    "open": 242.5,
+    "high": 245.5,
+    "low": 241,
+    "close": 245.5
+  },
+  {
+    "date": "2019/3/22",
+    "open": 248,
+    "high": 248.5,
+    "low": 244.5,
+    "close": 248.5
+  },
+  {
+    "date": "2019/3/25",
+    "open": 240.5,
+    "high": 243.5,
+    "low": 240.5,
+    "close": 241.5
+  },
+  {
+    "date": "2019/3/26",
+    "open": 243,
+    "high": 244,
+    "low": 241,
+    "close": 244
+  },
+  {
+    "date": "2019/3/27",
+    "open": 242,
+    "high": 242.5,
+    "low": 240.5,
+    "close": 241.5
+  },
+  {
+    "date": "2019/3/28",
+    "open": 240.5,
+    "high": 242.5,
+    "low": 240,
+    "close": 242
+  },
+  {
+    "date": "2019/3/29",
+    "open": 243,
+    "high": 245.5,
+    "low": 240.5,
+    "close": 245.5
+  },
+  {
+    "date": "2019/4/1",
+    "open": 251,
+    "high": 251,
+    "low": 245,
+    "close": 245.5
+  },
+  {
+    "date": "2019/4/2",
+    "open": 249.5,
+    "high": 249.5,
+    "low": 246,
+    "close": 246
+  },
+  {
+    "date": "2019/4/3",
+    "open": 249,
+    "high": 249,
+    "low": 246.5,
+    "close": 246.5
+  },
+  {
+    "date": "2019/4/8",
+    "open": 251,
+    "high": 253,
+    "low": 250.5,
+    "close": 253
+  },
+  {
+    "date": "2019/4/9",
+    "open": 253,
+    "high": 254,
+    "low": 252,
+    "close": 254
+  },
+  {
+    "date": "2019/4/10",
+    "open": 253,
+    "high": 254.5,
+    "low": 252,
+    "close": 254
+  },
+  {
+    "date": "2019/4/11",
+    "open": 253,
+    "high": 254,
+    "low": 251.5,
+    "close": 252
+  },
+  {
+    "date": "2019/4/12",
+    "open": 251.5,
+    "high": 253,
+    "low": 251,
+    "close": 252
+  },
+  {
+    "date": "2019/4/15",
+    "open": 255,
+    "high": 256,
+    "low": 254,
+    "close": 255.5
+  },
+  {
+    "date": "2019/4/16",
+    "open": 257,
+    "high": 257,
+    "low": 255.5,
+    "close": 257
+  },
+  {
+    "date": "2019/4/17",
+    "open": 260,
+    "high": 263,
+    "low": 259.5,
+    "close": 261.5
+  },
+  {
+    "date": "2019/4/18",
+    "open": 264,
+    "high": 266,
+    "low": 263.5,
+    "close": 264.5
+  },
+  {
+    "date": "2019/4/19",
+    "open": 269,
+    "high": 269.5,
+    "low": 263.5,
+    "close": 264.5
+  },
+  {
+    "date": "2019/4/22",
+    "open": 266.5,
+    "high": 267.5,
+    "low": 265,
+    "close": 266
+  },
+  {
+    "date": "2019/4/23",
+    "open": 266.5,
+    "high": 268,
+    "low": 266,
+    "close": 268
+  },
+  {
+    "date": "2019/4/24",
+    "open": 270,
+    "high": 270,
+    "low": 267.5,
+    "close": 269
+  },
+  {
+    "date": "2019/4/25",
+    "open": 268.5,
+    "high": 269,
+    "low": 267,
+    "close": 267.5
+  },
+  {
+    "date": "2019/4/26",
+    "open": 262,
+    "high": 263,
+    "low": 257.5,
+    "close": 260
+  },
+  {
+    "date": "2019/4/29",
+    "open": 260,
+    "high": 262,
+    "low": 258.5,
+    "close": 259.5
+  },
+  {
+    "date": "2019/4/30",
+    "open": 260,
+    "high": 260.5,
+    "low": 258,
+    "close": 259
+  },
+  {
+    "date": "2019/5/2",
+    "open": 261.5,
+    "high": 262.5,
+    "low": 258.5,
+    "close": 259
+  },
+  {
+    "date": "2019/5/3",
+    "open": 262,
+    "high": 265,
+    "low": 260.5,
+    "close": 265
+  },
+  {
+    "date": "2019/5/6",
+    "open": 260,
+    "high": 260,
+    "low": 258,
+    "close": 259
+  },
+  {
+    "date": "2019/5/7",
+    "open": 259.5,
+    "high": 263,
+    "low": 259,
+    "close": 262.5
+  },
+  {
+    "date": "2019/5/8",
+    "open": 260,
+    "high": 261.5,
+    "low": 259.5,
+    "close": 260
+  },
+  {
+    "date": "2019/5/9",
+    "open": 259.5,
+    "high": 259.5,
+    "low": 256,
+    "close": 256.5
+  },
+  {
+    "date": "2019/5/10",
+    "open": 257,
+    "high": 259,
+    "low": 255,
+    "close": 256
+  },
+  {
+    "date": "2019/5/13",
+    "open": 253,
+    "high": 254,
+    "low": 249.5,
+    "close": 250.5
+  },
+  {
+    "date": "2019/5/14",
+    "open": 247.5,
+    "high": 251,
+    "low": 245,
+    "close": 248.5
+  },
+  {
+    "date": "2019/5/15",
+    "open": 251,
+    "high": 252,
+    "low": 249,
+    "close": 249
+  },
+  {
+    "date": "2019/5/16",
+    "open": 248.5,
+    "high": 249.5,
+    "low": 246,
+    "close": 247
+  },
+  {
+    "date": "2019/5/17",
+    "open": 249,
+    "high": 249,
+    "low": 241.5,
+    "close": 241.5
+  },
+  {
+    "date": "2019/5/20",
+    "open": 242.5,
+    "high": 243,
+    "low": 238,
+    "close": 238
+  },
+  {
+    "date": "2019/5/21",
+    "open": 233.5,
+    "high": 236,
+    "low": 232.5,
+    "close": 234
+  },
+  {
+    "date": "2019/5/22",
+    "open": 236.5,
+    "high": 240.5,
+    "low": 235.5,
+    "close": 238
+  },
+  {
+    "date": "2019/5/23",
+    "open": 233.5,
+    "high": 233.5,
+    "low": 230,
+    "close": 230
+  },
+  {
+    "date": "2019/5/24",
+    "open": 230,
+    "high": 234,
+    "low": 230,
+    "close": 233
+  },
+  {
+    "date": "2019/5/27",
+    "open": 234,
+    "high": 235,
+    "low": 231,
+    "close": 231
+  },
+  {
+    "date": "2019/5/28",
+    "open": 232,
+    "high": 232,
+    "low": 230.5,
+    "close": 230.5
+  },
+  {
+    "date": "2019/5/29",
+    "open": 228,
+    "high": 230.5,
+    "low": 227,
+    "close": 229.5
+  },
+  {
+    "date": "2019/5/30",
+    "open": 230,
+    "high": 231.5,
+    "low": 229,
+    "close": 231
+  },
+  {
+    "date": "2019/5/31",
+    "open": 232,
+    "high": 237.5,
+    "low": 231,
+    "close": 235.5
+  },
+  {
+    "date": "2019/6/3",
+    "open": 235.5,
+    "high": 238.5,
+    "low": 232,
+    "close": 238
+  },
+  {
+    "date": "2019/6/4",
+    "open": 237.5,
+    "high": 238,
+    "low": 233,
+    "close": 233
+  },
+  {
+    "date": "2019/6/5",
+    "open": 238,
+    "high": 238,
+    "low": 234,
+    "close": 235
+  },
+  {
+    "date": "2019/6/6",
+    "open": 231.5,
+    "high": 232,
+    "low": 229.5,
+    "close": 232
+  },
+  {
+    "date": "2019/6/10",
+    "open": 237.5,
+    "high": 240,
+    "low": 234.5,
+    "close": 240
+  },
+  {
+    "date": "2019/6/11",
+    "open": 240,
+    "high": 246,
+    "low": 239,
+    "close": 244.5
+  },
+  {
+    "date": "2019/6/12",
+    "open": 244.5,
+    "high": 247.5,
+    "low": 243,
+    "close": 246
+  },
+  {
+    "date": "2019/6/13",
+    "open": 242.5,
+    "high": 244,
+    "low": 240,
+    "close": 240
+  },
+  {
+    "date": "2019/6/14",
+    "open": 238.5,
+    "high": 239.5,
+    "low": 236,
+    "close": 236
+  },
+  {
+    "date": "2019/6/17",
+    "open": 231.5,
+    "high": 235,
+    "low": 230.5,
+    "close": 233
+  },
+  {
+    "date": "2019/6/18",
+    "open": 234,
+    "high": 235.5,
+    "low": 233,
+    "close": 235.5
+  },
+  {
+    "date": "2019/6/19",
+    "open": 242.5,
+    "high": 244,
+    "low": 240.5,
+    "close": 244
+  },
+  {
+    "date": "2019/6/20",
+    "open": 242,
+    "high": 245.5,
+    "low": 241,
+    "close": 245
+  },
+  {
+    "date": "2019/6/21",
+    "open": 248,
+    "high": 248.5,
+    "low": 246,
+    "close": 248.5
+  },
+  {
+    "date": "2019/6/24",
+    "open": 241,
+    "high": 242,
+    "low": 240,
+    "close": 241
+  },
+  {
+    "date": "2019/6/25",
+    "open": 241,
+    "high": 241.5,
+    "low": 237,
+    "close": 238.5
+  },
+  {
+    "date": "2019/6/26",
+    "open": 235,
+    "high": 236.5,
+    "low": 234,
+    "close": 234.5
+  },
+  {
+    "date": "2019/6/27",
+    "open": 236,
+    "high": 241.5,
+    "low": 236,
+    "close": 240.5
+  },
+  {
+    "date": "2019/6/28",
+    "open": 241.5,
+    "high": 241.5,
+    "low": 238,
+    "close": 239
+  },
+  {
+    "date": "2019/7/1",
+    "open": 245.5,
+    "high": 250,
+    "low": 245,
+    "close": 248.5
+  },
+  {
+    "date": "2019/7/2",
+    "open": 249.5,
+    "high": 250,
+    "low": 247.5,
+    "close": 249
+  },
+  {
+    "date": "2019/7/3",
+    "open": 244,
+    "high": 245,
+    "low": 242,
+    "close": 242.5
+  },
+  {
+    "date": "2019/7/4",
+    "open": 244.5,
+    "high": 245,
+    "low": 242.5,
+    "close": 244
+  },
+  {
+    "date": "2019/7/5",
+    "open": 244.5,
+    "high": 245,
+    "low": 241.5,
+    "close": 243
+  },
+  {
+    "date": "2019/7/8",
+    "open": 240,
+    "high": 244.5,
+    "low": 240,
+    "close": 242.5
+  },
+  {
+    "date": "2019/7/9",
+    "open": 241.5,
+    "high": 243,
+    "low": 240.5,
+    "close": 242
+  },
+  {
+    "date": "2019/7/10",
+    "open": 243,
+    "high": 247,
+    "low": 243,
+    "close": 247
+  },
+  {
+    "date": "2019/7/11",
+    "open": 250,
+    "high": 250,
+    "low": 247.5,
+    "close": 250
+  },
+  {
+    "date": "2019/7/12",
+    "open": 252,
+    "high": 252,
+    "low": 249.5,
+    "close": 250.5
+  },
+  {
+    "date": "2019/7/15",
+    "open": 251,
+    "high": 254.5,
+    "low": 249.5,
+    "close": 254.5
+  },
+  {
+    "date": "2019/7/16",
+    "open": 254,
+    "high": 256.5,
+    "low": 253.5,
+    "close": 256
+  },
+  {
+    "date": "2019/7/17",
+    "open": 254,
+    "high": 254,
+    "low": 251,
+    "close": 252
+  },
+  {
+    "date": "2019/7/18",
+    "open": 252,
+    "high": 254.5,
+    "low": 251.5,
+    "close": 254
+  },
+  {
+    "date": "2019/7/19",
+    "open": 259.5,
+    "high": 261,
+    "low": 259,
+    "close": 259
+  },
+  {
+    "date": "2019/7/22",
+    "open": 263,
+    "high": 264,
+    "low": 262,
+    "close": 264
+  },
+  {
+    "date": "2019/7/23",
+    "open": 265.5,
+    "high": 266.5,
+    "low": 262.5,
+    "close": 264
+  },
+  {
+    "date": "2019/7/24",
+    "open": 266.5,
+    "high": 266.5,
+    "low": 263,
+    "close": 265
+  },
+  {
+    "date": "2019/7/25",
+    "open": 264,
+    "high": 265,
+    "low": 261.5,
+    "close": 265
+  },
+  {
+    "date": "2019/7/26",
+    "open": 261,
+    "high": 262.5,
+    "low": 261,
+    "close": 261
+  },
+  {
+    "date": "2019/7/29",
+    "open": 260,
+    "high": 262,
+    "low": 259.5,
+    "close": 261
+  },
+  {
+    "date": "2019/7/30",
+    "open": 262.5,
+    "high": 263,
+    "low": 260,
+    "close": 260
+  },
+  {
+    "date": "2019/7/31",
+    "open": 260,
+    "high": 260,
+    "low": 257,
+    "close": 259.5
+  },
+  {
+    "date": "2019/8/1",
+    "open": 257.5,
+    "high": 257.5,
+    "low": 255.5,
+    "close": 256.5
+  },
+  {
+    "date": "2019/8/2",
+    "open": 252,
+    "high": 253.5,
+    "low": 250.5,
+    "close": 251.5
+  },
+  {
+    "date": "2019/8/5",
+    "open": 251,
+    "high": 252,
+    "low": 245.5,
+    "close": 246.5
+  },
+  {
+    "date": "2019/8/6",
+    "open": 240,
+    "high": 250,
+    "low": 240,
+    "close": 248.5
+  },
+  {
+    "date": "2019/8/7",
+    "open": 250,
+    "high": 250.5,
+    "low": 246.5,
+    "close": 248
+  },
+  {
+    "date": "2019/8/8",
+    "open": 248,
+    "high": 254,
+    "low": 248,
+    "close": 253.5
+  },
+  {
+    "date": "2019/8/12",
+    "open": 254.5,
+    "high": 254.5,
+    "low": 251,
+    "close": 251
+  },
+  {
+    "date": "2019/8/13",
+    "open": 249,
+    "high": 249.5,
+    "low": 246.5,
+    "close": 246.5
+  },
+  {
+    "date": "2019/8/14",
+    "open": 252.5,
+    "high": 254,
+    "low": 249.5,
+    "close": 249.5
+  },
+  {
+    "date": "2019/8/15",
+    "open": 247,
+    "high": 248.5,
+    "low": 246,
+    "close": 248
+  },
+  {
+    "date": "2019/8/16",
+    "open": 249.5,
+    "high": 252,
+    "low": 248,
+    "close": 250
+  },
+  {
+    "date": "2019/8/19",
+    "open": 251.5,
+    "high": 253,
+    "low": 250.5,
+    "close": 252
+  },
+  {
+    "date": "2019/8/20",
+    "open": 254,
+    "high": 254.5,
+    "low": 252.5,
+    "close": 254.5
+  },
+  {
+    "date": "2019/8/21",
+    "open": 254.5,
+    "high": 255,
+    "low": 253,
+    "close": 254.5
+  },
+  {
+    "date": "2019/8/22",
+    "open": 257,
+    "high": 257.5,
+    "low": 254,
+    "close": 254
+  },
+  {
+    "date": "2019/8/23",
+    "open": 253.5,
+    "high": 254.5,
+    "low": 253,
+    "close": 254
+  },
+  {
+    "date": "2019/8/26",
+    "open": 249,
+    "high": 250.5,
+    "low": 248.5,
+    "close": 248.5
+  },
+  {
+    "date": "2019/8/27",
+    "open": 250.5,
+    "high": 251,
+    "low": 248.5,
+    "close": 250
+  },
+  {
+    "date": "2019/8/28",
+    "open": 250.5,
+    "high": 253,
+    "low": 250.5,
+    "close": 252
+  },
+  {
+    "date": "2019/8/29",
+    "open": 253,
+    "high": 254,
+    "low": 251,
+    "close": 254
+  },
+  {
+    "date": "2019/8/30",
+    "open": 256.5,
+    "high": 259,
+    "low": 256,
+    "close": 259
+  },
+  {
+    "date": "2019/9/2",
+    "open": 258,
+    "high": 258,
+    "low": 256,
+    "close": 257.5
+  },
+  {
+    "date": "2019/9/3",
+    "open": 256.5,
+    "high": 258,
+    "low": 253,
+    "close": 254
+  },
+  {
+    "date": "2019/9/4",
+    "open": 254,
+    "high": 258,
+    "low": 254,
+    "close": 257.5
+  },
+  {
+    "date": "2019/9/5",
+    "open": 263,
+    "high": 263,
+    "low": 260.5,
+    "close": 263
+  },
+  {
+    "date": "2019/9/6",
+    "open": 265,
+    "high": 265,
+    "low": 263,
+    "close": 263.5
+  },
+  {
+    "date": "2019/9/9",
+    "open": 265.5,
+    "high": 266,
+    "low": 263.5,
+    "close": 265
+  },
+  {
+    "date": "2019/9/10",
+    "open": 263.5,
+    "high": 264,
+    "low": 260.5,
+    "close": 261.5
+  },
+  {
+    "date": "2019/9/11",
+    "open": 264,
+    "high": 264.5,
+    "low": 260.5,
+    "close": 263
+  },
+  {
+    "date": "2019/9/12",
+    "open": 265,
+    "high": 265,
+    "low": 261.5,
+    "close": 262.5
+  },
+  {
+    "date": "2019/9/16",
+    "open": 262,
+    "high": 265.5,
+    "low": 261.5,
+    "close": 265.5
+  },
+  {
+    "date": "2019/9/17",
+    "open": 266.5,
+    "high": 266.5,
+    "low": 264.5,
+    "close": 265
+  },
+  {
+    "date": "2019/9/18",
+    "open": 267,
+    "high": 269.5,
+    "low": 266.5,
+    "close": 267
+  },
+  {
+    "date": "2019/9/19",
+    "open": 268,
+    "high": 268,
+    "low": 264,
+    "close": 265
+  },
+  {
+    "date": "2019/9/20",
+    "open": 266,
+    "high": 266.5,
+    "low": 264,
+    "close": 264
+  },
+  {
+    "date": "2019/9/23",
+    "open": 264,
+    "high": 264,
+    "low": 263,
+    "close": 264
+  },
+  {
+    "date": "2019/9/24",
+    "open": 263.5,
+    "high": 265.5,
+    "low": 262,
+    "close": 265
+  },
+  {
+    "date": "2019/9/25",
+    "open": 262.5,
+    "high": 266,
+    "low": 262,
+    "close": 266
+  },
+  {
+    "date": "2019/9/26",
+    "open": 269,
+    "high": 269.5,
+    "low": 266.5,
+    "close": 268
+  },
+  {
+    "date": "2019/9/27",
+    "open": 271.5,
+    "high": 272.5,
+    "low": 271,
+    "close": 272
+  },
+  {
+    "date": "2019/10/1",
+    "open": 273,
+    "high": 280.5,
+    "low": 273,
+    "close": 280
+  },
+  {
+    "date": "2019/10/2",
+    "open": 280,
+    "high": 281,
+    "low": 279,
+    "close": 279.5
+  },
+  {
+    "date": "2019/10/3",
+    "open": 274,
+    "high": 277.5,
+    "low": 274,
+    "close": 276.5
+  },
+  {
+    "date": "2019/10/4",
+    "open": 279.5,
+    "high": 280,
+    "low": 275,
+    "close": 276.5
+  },
+  {
+    "date": "2019/10/7",
+    "open": 279,
+    "high": 279.5,
+    "low": 277.5,
+    "close": 278
+  },
+  {
+    "date": "2019/10/8",
+    "open": 283.5,
+    "high": 286.5,
+    "low": 282.5,
+    "close": 286.5
+  },
+  {
+    "date": "2019/10/9",
+    "open": 283.5,
+    "high": 286,
+    "low": 282,
+    "close": 282
+  },
+  {
+    "date": "2019/10/14",
+    "open": 291.5,
+    "high": 291.5,
+    "low": 288.5,
+    "close": 290
+  },
+  {
+    "date": "2019/10/15",
+    "open": 293.5,
+    "high": 296,
+    "low": 292,
+    "close": 293.5
+  },
+  {
+    "date": "2019/10/16",
+    "open": 298,
+    "high": 298,
+    "low": 293.5,
+    "close": 296.5
+  },
+  {
+    "date": "2019/10/17",
+    "open": 295,
+    "high": 295.5,
+    "low": 292,
+    "close": 293.5
+  },
+  {
+    "date": "2019/10/18",
+    "open": 293,
+    "high": 295.5,
+    "low": 291,
+    "close": 293
+  },
+  {
+    "date": "2019/10/21",
+    "open": 291,
+    "high": 291,
+    "low": 288.5,
+    "close": 290
+  },
+  {
+    "date": "2019/10/22",
+    "open": 292.5,
+    "high": 294,
+    "low": 291.5,
+    "close": 294
+  },
+  {
+    "date": "2019/10/23",
+    "open": 293.5,
+    "high": 293.5,
+    "low": 290.5,
+    "close": 293
+  },
+  {
+    "date": "2019/10/24",
+    "open": 294.5,
+    "high": 294.5,
+    "low": 291,
+    "close": 293
+  },
+  {
+    "date": "2019/10/25",
+    "open": 294.5,
+    "high": 294.5,
+    "low": 292.5,
+    "close": 293.5
+  },
+  {
+    "date": "2019/10/28",
+    "open": 295,
+    "high": 295.5,
+    "low": 294,
+    "close": 294.5
+  },
+  {
+    "date": "2019/10/29",
+    "open": 297,
+    "high": 298.5,
+    "low": 296.5,
+    "close": 298.5
+  },
+  {
+    "date": "2019/10/30",
+    "open": 298.5,
+    "high": 299.5,
+    "low": 296.5,
+    "close": 299.5
+  },
+  {
+    "date": "2019/10/31",
+    "open": 300,
+    "high": 301.5,
+    "low": 298.5,
+    "close": 298.5
+  },
+  {
+    "date": "2019/11/1",
+    "open": 299.5,
+    "high": 299.5,
+    "low": 296.5,
+    "close": 299
+  },
+  {
+    "date": "2019/11/4",
+    "open": 302.5,
+    "high": 308,
+    "low": 301,
+    "close": 307
+  },
+  {
+    "date": "2019/11/5",
+    "open": 307.5,
+    "high": 310.5,
+    "low": 307,
+    "close": 310.5
+  },
+  {
+    "date": "2019/11/6",
+    "open": 309,
+    "high": 311.5,
+    "low": 308,
+    "close": 311
+  },
+  {
+    "date": "2019/11/7",
+    "open": 310,
+    "high": 310,
+    "low": 306.5,
+    "close": 309
+  },
+  {
+    "date": "2019/11/8",
+    "open": 308.5,
+    "high": 309,
+    "low": 305.5,
+    "close": 305.5
+  },
+  {
+    "date": "2019/11/11",
+    "open": 305,
+    "high": 305,
+    "low": 300,
+    "close": 301
+  },
+  {
+    "date": "2019/11/12",
+    "open": 302.5,
+    "high": 305,
+    "low": 302,
+    "close": 305
+  },
+  {
+    "date": "2019/11/13",
+    "open": 303,
+    "high": 304,
+    "low": 301.5,
+    "close": 304
+  },
+  {
+    "date": "2019/11/14",
+    "open": 304.5,
+    "high": 305,
+    "low": 302,
+    "close": 303.5
+  },
+  {
+    "date": "2019/11/15",
+    "open": 305.5,
+    "high": 307.5,
+    "low": 304.5,
+    "close": 307
+  },
+  {
+    "date": "2019/11/18",
+    "open": 308.5,
+    "high": 311,
+    "low": 307,
+    "close": 311
+  },
+  {
+    "date": "2019/11/19",
+    "open": 312.5,
+    "high": 315,
+    "low": 311,
+    "close": 315
+  },
+  {
+    "date": "2019/11/20",
+    "open": 314,
+    "high": 314,
+    "low": 312,
+    "close": 313.5
+  },
+  {
+    "date": "2019/11/21",
+    "open": 309.5,
+    "high": 311,
+    "low": 307,
+    "close": 311
+  },
+  {
+    "date": "2019/11/22",
+    "open": 310,
+    "high": 310.5,
+    "low": 308,
+    "close": 309
+  },
+  {
+    "date": "2019/11/25",
+    "open": 310.5,
+    "high": 310.5,
+    "low": 307,
+    "close": 307
+  },
+  {
+    "date": "2019/11/26",
+    "open": 310,
+    "high": 310.5,
+    "low": 307,
+    "close": 307
+  },
+  {
+    "date": "2019/11/27",
+    "open": 307.5,
+    "high": 311.5,
+    "low": 307.5,
+    "close": 311
+  },
+  {
+    "date": "2019/11/28",
+    "open": 310,
+    "high": 312,
+    "low": 308.5,
+    "close": 309.5
+  },
+  {
+    "date": "2019/11/29",
+    "open": 309,
+    "high": 309.5,
+    "low": 305,
+    "close": 305
+  },
+  {
+    "date": "2019/12/2",
+    "open": 307,
+    "high": 308,
+    "low": 306.5,
+    "close": 307.5
+  },
+  {
+    "date": "2019/12/3",
+    "open": 305,
+    "high": 307,
+    "low": 305,
+    "close": 307
+  },
+  {
+    "date": "2019/12/4",
+    "open": 305,
+    "high": 306,
+    "low": 304,
+    "close": 306
+  },
+  {
+    "date": "2019/12/5",
+    "open": 309,
+    "high": 312,
+    "low": 309,
+    "close": 312
+  },
+  {
+    "date": "2019/12/6",
+    "open": 315,
+    "high": 316,
+    "low": 311,
+    "close": 313
+  },
+  {
+    "date": "2019/12/9",
+    "open": 314,
+    "high": 316.5,
+    "low": 314,
+    "close": 316
+  },
+  {
+    "date": "2019/12/10",
+    "open": 315,
+    "high": 315.5,
+    "low": 312.5,
+    "close": 313.5
+  },
+  {
+    "date": "2019/12/11",
+    "open": 314,
+    "high": 319,
+    "low": 313,
+    "close": 319
+  },
+  {
+    "date": "2019/12/12",
+    "open": 325,
+    "high": 334.5,
+    "low": 324,
+    "close": 331.5
+  },
+  {
+    "date": "2019/12/13",
+    "open": 340,
+    "high": 343,
+    "low": 338,
+    "close": 339
+  },
+  {
+    "date": "2019/12/16",
+    "open": 336.5,
+    "high": 338.5,
+    "low": 336,
+    "close": 336
+  },
+  {
+    "date": "2019/12/17",
+    "open": 335,
+    "high": 345,
+    "low": 335,
+    "close": 345
+  },
+  {
+    "date": "2019/12/18",
+    "open": 341.5,
+    "high": 345,
+    "low": 341.5,
+    "close": 344.5
+  },
+  {
+    "date": "2019/12/19",
+    "open": 340,
+    "high": 342,
+    "low": 335,
+    "close": 335
+  },
+  {
+    "date": "2019/12/20",
+    "open": 332,
+    "high": 333,
+    "low": 328.5,
+    "close": 329
+  }
+];
+
+}); // end am4core.ready()
+    </script>
+
+
+{{-- test --}}
+<script>
+    am4core.ready(function() {
+
+    // Themes begin
+    am4core.useTheme(am4themes_animated);
+    // Themes end
+
+    // Create chart instance
+    var chart = am4core.create("test", am4charts.XYChart);
+
+    // Add data
+    chart.data = [
+  {
+    "country": "1/30",
+    "visits": 51890
+  },
+  {
+    "country": "2/11",
+    "visits": 81360
+  },
+  {
+    "country": "2/12",
+    "visits": 30126
+  },
+  {
+    "country": "2/13",
+    "visits": 28635
+  },
+  {
+    "country": "2/14",
+    "visits": 23648
+  },
+  {
+    "country": "2/15",
+    "visits": 22370
+  },
+  {
+    "country": "2/18",
+    "visits": 18164
+  },
+  {
+    "country": "2/19",
+    "visits": 18423
+  },
+  {
+    "country": "2/20",
+    "visits": 31888
+  },
+  {
+    "country": "2/21",
+    "visits": 34013
+  },
+  {
+    "country": "2/22",
+    "visits": 22032
+  },
+  {
+    "country": "2/25",
+    "visits": 25227
+  },
+  {
+    "country": "2/26",
+    "visits": 24587
+  },
+  {
+    "country": "2/27",
+    "visits": 37948
+  },
+  {
+    "country": "3/4",
+    "visits": 45165
+  },
+  {
+    "country": "3/5",
+    "visits": 23708
+  },
+  {
+    "country": "3/6",
+    "visits": 20811
+  },
+  {
+    "country": "3/7",
+    "visits": 17226
+  },
+  {
+    "country": "3/8",
+    "visits": 22536
+  },
+  {
+    "country": "3/11",
+    "visits": 34283
+  },
+  {
+    "country": "3/12",
+    "visits": 23840
+  },
+  {
+    "country": "3/13",
+    "visits": 22493
+  },
+  {
+    "country": "3/14",
+    "visits": 17281
+  },
+  {
+    "country": "3/15",
+    "visits": 34543
+  },
+  {
+    "country": "3/18",
+    "visits": 27041
+  },
+  {
+    "country": "3/19",
+    "visits": 14620
+  },
+  {
+    "country": "3/20",
+    "visits": 23056
+  },
+  {
+    "country": "3/21",
+    "visits": 27515
+  },
+  {
+    "country": "3/22",
+    "visits": 22996
+  },
+  {
+    "country": "3/25",
+    "visits": 19273
+  },
+  {
+    "country": "3/26",
+    "visits": 21053
+  },
+  {
+    "country": "3/27",
+    "visits": 23622
+  },
+  {
+    "country": "3/28",
+    "visits": 13998
+  },
+  {
+    "country": "3/29",
+    "visits": 31025
+  },
+  {
+    "country": "4/1",
+    "visits": 35331
+  },
+  {
+    "country": "4/2",
+    "visits": 25189
+  },
+  {
+    "country": "4/3",
+    "visits": 28581
+  },
+  {
+    "country": "4/8",
+    "visits": 46427
+  },
+  {
+    "country": "4/9",
+    "visits": 22746
+  },
+  {
+    "country": "4/10",
+    "visits": 33175
+  },
+  {
+    "country": "4/11",
+    "visits": 25147
+  },
+  {
+    "country": "4/12",
+    "visits": 13888
+  },
+  {
+    "country": "4/15",
+    "visits": 17257
+  },
+  {
+    "country": "4/16",
+    "visits": 20232
+  },
+  {
+    "country": "4/17",
+    "visits": 39037
+  },
+  {
+    "country": "4/18",
+    "visits": 48525
+  },
+  {
+    "country": "4/19",
+    "visits": 47699
+  },
+  {
+    "country": "4/22",
+    "visits": 24967
+  },
+  {
+    "country": "4/23",
+    "visits": 26252
+  },
+  {
+    "country": "4/24",
+    "visits": 37387
+  },
+  {
+    "country": "4/25",
+    "visits": 36572
+  },
+  {
+    "country": "4/26",
+    "visits": 51744
+  },
+  {
+    "country": "4/29",
+    "visits": 32652
+  },
+  {
+    "country": "4/30",
+    "visits": 40446
+  },
+  {
+    "country": "5/2",
+    "visits": 27376
+  },
+  {
+    "country": "5/3",
+    "visits": 30200
+  },
+  {
+    "country": "5/6",
+    "visits": 33688
+  },
+  {
+    "country": "5/7",
+    "visits": 25686
+  },
+  {
+    "country": "5/8",
+    "visits": 25902
+  },
+  {
+    "country": "5/9",
+    "visits": 34167
+  },
+  {
+    "country": "5/10",
+    "visits": 18868
+  },
+  {
+    "country": "5/13",
+    "visits": 29318
+  },
+  {
+    "country": "5/14",
+    "visits": 45621
+  },
+  {
+    "country": "5/15",
+    "visits": 37223
+  },
+  {
+    "country": "5/16",
+    "visits": 30332
+  },
+  {
+    "country": "5/17",
+    "visits": 40007
+  },
+  {
+    "country": "5/20",
+    "visits": 47098
+  },
+  {
+    "country": "5/21",
+    "visits": 82873
+  },
+  {
+    "country": "5/22",
+    "visits": 36289
+  },
+  {
+    "country": "5/23",
+    "visits": 62259
+  },
+  {
+    "country": "5/24",
+    "visits": 38227
+  },
+  {
+    "country": "5/27",
+    "visits": 37447
+  },
+  {
+    "country": "5/28",
+    "visits": 99322
+  },
+  {
+    "country": "5/29",
+    "visits": 32260
+  },
+  {
+    "country": "5/30",
+    "visits": 40375
+  },
+  {
+    "country": "5/31",
+    "visits": 49163
+  },
+  {
+    "country": "6/3",
+    "visits": 36687
+  },
+  {
+    "country": "6/4",
+    "visits": 24443
+  },
+  {
+    "country": "6/5",
+    "visits": 35902
+  },
+  {
+    "country": "6/6",
+    "visits": 34652
+  },
+  {
+    "country": "6/10",
+    "visits": 35522
+  },
+  {
+    "country": "6/11",
+    "visits": 34692
+  },
+  {
+    "country": "6/12",
+    "visits": 30410
+  },
+  {
+    "country": "6/13",
+    "visits": 33732
+  },
+  {
+    "country": "6/14",
+    "visits": 35404
+  },
+  {
+    "country": "6/17",
+    "visits": 51692
+  },
+  {
+    "country": "6/18",
+    "visits": 28798
+  },
+  {
+    "country": "6/19",
+    "visits": 50234
+  },
+  {
+    "country": "6/20",
+    "visits": 39717
+  },
+  {
+    "country": "6/21",
+    "visits": 62136
+  },
+  {
+    "country": "6/24",
+    "visits": 43461
+  },
+  {
+    "country": "6/25",
+    "visits": 29735
+  },
+  {
+    "country": "6/26",
+    "visits": 28770
+  },
+  {
+    "country": "6/27",
+    "visits": 42008
+  },
+  {
+    "country": "6/28",
+    "visits": 28085
+  },
+  {
+    "country": "7/1",
+    "visits": 66371
+  },
+  {
+    "country": "7/2",
+    "visits": 26832
+  },
+  {
+    "country": "7/3",
+    "visits": 29550
+  },
+  {
+    "country": "7/4",
+    "visits": 18691
+  },
+  {
+    "country": "7/5",
+    "visits": 27317
+  },
+  {
+    "country": "7/8",
+    "visits": 29191
+  },
+  {
+    "country": "7/9",
+    "visits": 16539
+  },
+  {
+    "country": "7/10",
+    "visits": 23812
+  },
+  {
+    "country": "7/11",
+    "visits": 31296
+  },
+  {
+    "country": "7/12",
+    "visits": 23868
+  },
+  {
+    "country": "7/15",
+    "visits": 34264
+  },
+  {
+    "country": "7/16",
+    "visits": 26141
+  },
+  {
+    "country": "7/17",
+    "visits": 34347
+  },
+  {
+    "country": "7/18",
+    "visits": 20909
+  },
+  {
+    "country": "7/19",
+    "visits": 59880
+  },
+  {
+    "country": "7/22",
+    "visits": 31864
+  },
+  {
+    "country": "7/23",
+    "visits": 29273
+  },
+  {
+    "country": "7/24",
+    "visits": 24511
+  },
+  {
+    "country": "7/25",
+    "visits": 30699
+  },
+  {
+    "country": "7/26",
+    "visits": 20768
+  },
+  {
+    "country": "7/29",
+    "visits": 18473
+  },
+  {
+    "country": "7/30",
+    "visits": 22896
+  },
+  {
+    "country": "7/31",
+    "visits": 36366
+  },
+  {
+    "country": "8/1",
+    "visits": 30108
+  },
+  {
+    "country": "8/2",
+    "visits": 54166
+  },
+  {
+    "country": "8/5",
+    "visits": 52836
+  },
+  {
+    "country": "8/6",
+    "visits": 58917
+  },
+  {
+    "country": "8/7",
+    "visits": 29435
+  },
+  {
+    "country": "8/8",
+    "visits": 30140
+  },
+  {
+    "country": "8/12",
+    "visits": 24733
+  },
+  {
+    "country": "8/13",
+    "visits": 25045
+  },
+  {
+    "country": "8/14",
+    "visits": 36337
+  },
+  {
+    "country": "8/15",
+    "visits": 28277
+  },
+  {
+    "country": "8/16",
+    "visits": 25697
+  },
+  {
+    "country": "8/19",
+    "visits": 25099
+  },
+  {
+    "country": "8/20",
+    "visits": 20620
+  },
+  {
+    "country": "8/21",
+    "visits": 20269
+  },
+  {
+    "country": "8/22",
+    "visits": 22137
+  },
+  {
+    "country": "8/23",
+    "visits": 14773
+  },
+  {
+    "country": "8/26",
+    "visits": 31741
+  },
+  {
+    "country": "8/27",
+    "visits": 53665
+  },
+  {
+    "country": "8/28",
+    "visits": 15281
+  },
+  {
+    "country": "8/29",
+    "visits": 20086
+  },
+  {
+    "country": "8/30",
+    "visits": 35299
+  },
+  {
+    "country": "9/2",
+    "visits": 14777
+  },
+  {
+    "country": "9/3",
+    "visits": 26086
+  },
+  {
+    "country": "9/4",
+    "visits": 23698
+  },
+  {
+    "country": "9/5",
+    "visits": 49042
+  },
+  {
+    "country": "9/6",
+    "visits": 26610
+  },
+  {
+    "country": "9/9",
+    "visits": 17318
+  },
+  {
+    "country": "9/10",
+    "visits": 30020
+  },
+  {
+    "country": "9/11",
+    "visits": 36266
+  },
+  {
+    "country": "9/12",
+    "visits": 38792
+  },
+  {
+    "country": "9/16",
+    "visits": 38914
+  },
+  {
+    "country": "9/17",
+    "visits": 30070
+  },
+  {
+    "country": "9/18",
+    "visits": 51361
+  },
+  {
+    "country": "9/19",
+    "visits": 27166
+  },
+  {
+    "country": "9/20",
+    "visits": 44556
+  },
+  {
+    "country": "9/23",
+    "visits": 14220
+  },
+  {
+    "country": "9/24",
+    "visits": 24305
+  },
+  {
+    "country": "9/25",
+    "visits": 23244
+  },
+  {
+    "country": "9/26",
+    "visits": 34128
+  },
+  {
+    "country": "9/27",
+    "visits": 44243
+  },
+  {
+    "country": "10/1",
+    "visits": 75249
+  },
+  {
+    "country": "10/2",
+    "visits": 30573
+  },
+  {
+    "country": "10/3",
+    "visits": 35875
+  },
+  {
+    "country": "10/4",
+    "visits": 35815
+  },
+  {
+    "country": "10/7",
+    "visits": 17750
+  },
+  {
+    "country": "10/8",
+    "visits": 39869
+  },
+  {
+    "country": "10/9",
+    "visits": 34895
+  },
+  {
+    "country": "10/14",
+    "visits": 53404
+  },
+  {
+    "country": "10/15",
+    "visits": 54755
+  },
+  {
+    "country": "10/16",
+    "visits": 42917
+  },
+  {
+    "country": "10/17",
+    "visits": 41921
+  },
+  {
+    "country": "10/18",
+    "visits": 45461
+  },
+  {
+    "country": "10/21",
+    "visits": 35860
+  },
+  {
+    "country": "10/22",
+    "visits": 26525
+  },
+  {
+    "country": "10/23",
+    "visits": 30382
+  },
+  {
+    "country": "10/24",
+    "visits": 29041
+  },
+  {
+    "country": "10/25",
+    "visits": 25083
+  },
+  {
+    "country": "10/28",
+    "visits": 20217
+  },
+  {
+    "country": "10/29",
+    "visits": 37130
+  },
+  {
+    "country": "10/30",
+    "visits": 32370
+  },
+  {
+    "country": "10/31",
+    "visits": 43124
+  },
+  {
+    "country": "11/1",
+    "visits": 30217
+  },
+  {
+    "country": "11/4",
+    "visits": 45156
+  },
+  {
+    "country": "11/5",
+    "visits": 32253
+  },
+  {
+    "country": "11/6",
+    "visits": 22150
+  },
+  {
+    "country": "11/7",
+    "visits": 28454
+  },
+  {
+    "country": "11/8",
+    "visits": 26231
+  },
+  {
+    "country": "11/11",
+    "visits": 35286
+  },
+  {
+    "country": "11/12",
+    "visits": 19017
+  },
+  {
+    "country": "11/13",
+    "visits": 18422
+  },
+  {
+    "country": "11/14",
+    "visits": 15735
+  },
+  {
+    "country": "11/15",
+    "visits": 29038
+  },
+  {
+    "country": "11/18",
+    "visits": 18741
+  },
+  {
+    "country": "11/19",
+    "visits": 33096
+  },
+  {
+    "country": "11/20",
+    "visits": 24539
+  },
+  {
+    "country": "11/21",
+    "visits": 30164
+  },
+  {
+    "country": "11/22",
+    "visits": 26493
+  },
+  {
+    "country": "11/25",
+    "visits": 19855
+  },
+  {
+    "country": "11/26",
+    "visits": 101917
+  },
+  {
+    "country": "11/27",
+    "visits": 18528
+  },
+  {
+    "country": "11/28",
+    "visits": 19719
+  },
+  {
+    "country": "11/29",
+    "visits": 32424
+  },
+  {
+    "country": "12/2",
+    "visits": 25517
+  },
+  {
+    "country": "12/3",
+    "visits": 27686
+  },
+  {
+    "country": "12/4",
+    "visits": 34912
+  },
+  {
+    "country": "12/5",
+    "visits": 39350
+  },
+  {
+    "country": "12/6",
+    "visits": 18403
+  },
+  {
+    "country": "12/9",
+    "visits": 23556
+  },
+  {
+    "country": "12/10",
+    "visits": 20848
+  },
+  {
+    "country": "12/11",
+    "visits": 34329
+  },
+  {
+    "country": "12/12",
+    "visits": 52802
+  },
+  {
+    "country": "12/13",
+    "visits": 60844
+  },
+  {
+    "country": "12/16",
+    "visits": 48340
+  },
+  {
+    "country": "12/17",
+    "visits": 41428
+  },
+  {
+    "country": "12/18",
+    "visits": 42487
+  },
+  {
+    "country": "12/19",
+    "visits": 55667
+  },
+  {
+    "country": "12/20",
+    "visits": 86280
+  }
+];
+
+    // Create axes
+
+    var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
+    categoryAxis.dataFields.category = "country";
+    categoryAxis.renderer.grid.template.location = 0;
+    categoryAxis.renderer.minGridDistance = 30;
+
+    categoryAxis.renderer.labels.template.adapter.add("dy", function(dy, target) {
+      if (target.dataItem && target.dataItem.index & 2 == 2) {
+        return dy + 25;
+      }
+      return dy;
+    });
+
+    var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+
+    // Create series
+    var series = chart.series.push(new am4charts.ColumnSeries());
+    series.dataFields.valueY = "visits";
+    series.dataFields.categoryX = "country";
+    series.name = "Visits";
+    series.columns.template.tooltipText = "{categoryX}: [bold]{valueY}[/]";
+    series.columns.template.fillOpacity = .8;
+
+    var columnTemplate = series.columns.template;
+    columnTemplate.strokeWidth = 2;
+    columnTemplate.strokeOpacity = 1;
+
+    }); // end am4core.ready()
+    </script>
+
+</body>
+
+</html>

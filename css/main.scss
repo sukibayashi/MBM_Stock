@@ -1,0 +1,223 @@
+// style
+.btw_30 {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.up {
+    color: #d40001;
+}
+
+.dn {
+    color: #1ca208;
+}
+
+// style
+
+#chartdiv {
+    width: 100%;
+    height: 500px;
+  }
+
+
+body {
+  background-color: black;
+}
+
+// navbar
+.navbar {
+    .form-control {
+        background-color: #1c1c1e !important;
+    }
+
+    .btn-outline-success {
+        color: #007aff !important;
+        border-color: #007aff !important;
+    }
+
+    .btn-outline-success:hover:hover {
+        background-color: #085fbf !important;
+        color: white !important;
+        border-color: #00499a !important;
+    }
+}
+
+.bg-dark {
+    background-color: #212121 !important;
+}
+
+
+.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+
+  .ALL {
+    display: flex;
+    padding-bottom: 6px;
+    padding-top: 6px;
+
+    .marketNews {
+      width: 300px;
+      height: 100%;
+      padding-right: 3px;
+      padding-left: 6px;
+
+      // 左上
+      .market {
+        width: 280px;
+        height: 625px;
+        padding-bottom: 7px;
+        background-color: #2b2b2d;
+
+        // 市場菜單
+        .marketBar {
+          width: 100%;
+          height: 33px;
+          background-color: gray;
+
+
+          .marketBarC {
+            display: flex;
+            justify-content: space-between;
+
+            .marketFavorite {
+              padding-left: 50px;
+              padding-right: 11px;
+              padding-top: 2px;
+            }
+
+            .marketTaiwan {
+              padding-left: 11px;
+              padding-right: 50px;
+              padding-top: 2px;
+              //   border-bottom-width: 3px;
+              //   border-bottom-color: rgb(255, 255, 255);
+              //   border-bottom-style: solid;
+            }
+          }
+        }
+
+        // 市場指數
+        .marketValue {
+          width: 100%;
+
+        //   margin-bottom: 2px;
+
+
+          .valueNav {
+            display: flex;
+            align-items: center;
+            height: 33px;
+            margin-bottom: 3px;
+            background-color: green;
+          }
+        }
+
+        //個股
+        .stockDetail {
+          margin-top: 2px;
+
+        //   .idx_stock {
+
+        //     .commodityValue {
+        //       margin-left: 5px;
+        //       margin-right: 30px;
+        //     }
+
+        //     .dealValue {
+        //       margin-left: 5px;
+        //       margin-right: 15px;
+        //     }
+        //   }
+        }
+      }
+
+      //左下
+      .news{
+        margin-top: 3px;
+
+        .tabNWS{
+            font-size: 12px;
+        }
+      }
+    }
+
+    .mTechChart {
+      width: 100%;
+      min-width: 750px;
+      height: 100%;
+    //   background-color: blueviolet;
+
+      .stockCharts {
+        width: 100%;
+        // height: 625px;
+
+        color:white;
+
+        // 股票Nav
+        .stockchartsNav{
+            background-color: #2b2b2d;
+            height:66px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 3px;
+
+            #stkIdx{
+                margin-left: 10px;
+                margin-right: 25px;
+            }
+
+            #V_Date{
+                margin-right: 25px;
+
+            }
+
+            #V_Open{
+                margin-right: 25px;
+
+            }
+
+            #V_High{
+                margin-right: 25px;
+
+            }
+
+            #V_Low{
+                margin-right: 25px;
+
+            }
+
+            #V_Close{
+                margin-right: 25px;
+
+            }
+
+            #V_Value{
+                margin-right: 25px  ;
+
+            }
+        }
+
+        // 蠟燭圖
+        .stockLines{
+            background-color: #2b2b2d;
+
+        }
+
+      }
+
+    //   技術分析(下)
+        .Technical{
+
+            margin-top: 3px;
+
+            #test{
+                height:300px;
+                background-color: #2b2b2d;
+
+              }
+        }
+
+    }
+  }
+}
